@@ -80,8 +80,13 @@ public class Student implements Pupil, Serializable {
     };
 
     public void setMemento() throws IOException, ClassNotFoundException {
-      Student student= Memento.getStudent();
-       this.setSecondName(student.secondName);
+      Student student= Memento.getStudent();//достали student ко-рого сох. в массиве byte
+
+       this.setSecondName(student.secondName);//из сохр. студента перекопировали поля в тек. студента
+       for(int i=0; i<subjects.length; i++) {
+           this.setSubjectAt(i,student.getSubjectAt(i));
+           this.setMarkAt(i,student.getMarkAt(i));
+       }
 
     };
    public static  class  Memento{

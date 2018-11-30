@@ -8,7 +8,7 @@ import java.awt.event.MouseMotionListener;
 
 public class FaceComponent extends JPanel {
 
-    private final static int WINDOW_SIZE = 500;
+    private final static int WINDOW_SIZE = 300;
 
     private final Face face;
 

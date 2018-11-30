@@ -32,7 +32,7 @@ public class Face extends MouseAdapter implements Drawable {
         nose.draw(g);
         mouth.draw(g);
     }
-
+//mouse обработка шелчка мыши
     @Override
     public void mouseMoved(MouseEvent e) {
         for (Eye eye : eyes) {
