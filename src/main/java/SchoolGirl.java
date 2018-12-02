@@ -75,32 +75,24 @@ public class SchoolGirl implements Pupil {
         public boolean hasNext() {
             return cursor < getSubjectsCount();
         }
-
         @Override
         public Register next() {
             return registers[cursor++];
         }
-
         @Override
         public void remove() {
-
         }
     }
-/////////////
-     class Register {
+
+    static class Register {
         private String subjectName;
         private int mark;
-
-        ////////////////////
-
         Register() {
         }
-
         Register(String subjectName, int mark) {
             this.subjectName = subjectName;
             this.mark = mark;
         }
-
         @Override
         public String toString() {
             return subjectName + ": " + mark;

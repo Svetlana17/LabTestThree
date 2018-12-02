@@ -16,19 +16,19 @@ public class Pupils {
     private static String[] subjectNames = {"Physics", "Algebra", "Geometry", "Philosophy", "Chemistry", "Biology", "Literature"};
     private static Random random = new Random();
 
-  //  public static void log(Pupil pupil) {
-       // System.out.println(pupilToString(pupil));
-  //  }
-
-//    public static String pupilToString(Pupil pupil) {
-//        StringBuilder stringBuilder = new StringBuilder();
-//        stringBuilder.append(pupil.getSecondName()).append('\n');
-//        stringBuilder.append(pupil.getSubjectsCount()).append('\n');
-//        for (int i = 0; i < pupil.getSubjectsCount(); i++) {
-//            stringBuilder.append(String.format("%s %s\n", pupil.getSubjectAt(i), pupil.getMarkAt(i)));
-//        }
-//        return stringBuilder.toString();
-//    }
+    public static void log(Pupil pupil) {
+        System.out.println(pupilToString(pupil));
+    }
+//
+    public static String pupilToString(Pupil pupil) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(pupil.getSecondName()).append('\n');
+        stringBuilder.append(pupil.getSubjectsCount()).append('\n');
+        for (int i = 0; i < pupil.getSubjectsCount(); i++) {
+            stringBuilder.append(String.format("%s %s\n", pupil.getSubjectAt(i), pupil.getMarkAt(i)));
+        }
+        return stringBuilder.toString();
+    }
 
     public static double calculateAverageMark(Pupil pupil) {
         int sum = 0;

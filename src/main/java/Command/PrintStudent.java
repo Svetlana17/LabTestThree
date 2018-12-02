@@ -8,14 +8,18 @@ public class PrintStudent {
         PrintPupil printPupil=new PrintPupil();
         Command printCol=new PrintPupilColCommand(printPupil);
         Command printRow=new PrintPupilRowCommand(printPupil);
-        Student student=new Student("Ivanova", 3);
+        Student student=new Student("Ivanova", 4);
         student.setSubjectAt(0,"Geo");
         student.setSubjectAt(1, "English");
         student.setSubjectAt(2, "Biology");
+      // student.setSubjectAt(3, "Biology");
 
         student.setMarkAt(0,5);
         student.setMarkAt(1,5);
         student.setMarkAt(2,5);
+
+       // student.setMarkAt(3,5);
+
         student.setPrintCommand(printCol);
         student.setPrintCommand(printRow);
     }

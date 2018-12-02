@@ -10,7 +10,6 @@ public class SerilazeStudent {
 
         Student student2=new Student("Ivanova",3);
         student2.setSubjectAt(0, "OOP");
-
         student2.setSubjectAt(1, "Math");
         student2.setSubjectAt(2, "PO");
         student2.setMarkAt(0, 5);
@@ -22,6 +21,7 @@ public class SerilazeStudent {
         System.out.println(student2.toString());
         student2.setSecondName("Jons");//изм. состояние
         student2.setMarkAt(0, 3);//изм. состояние
+        student2.setSubjectAt(0, "Fisic");//изм. состояние
         System.out.println(student2.toString());
         student2.setMemento();//вернула состояние
         System.out.println(student2.toString());

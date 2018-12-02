@@ -37,9 +37,16 @@ public  class PrintPupilCol implements  PupilChain {
             bufferedWriter.newLine();
             bufferedWriter.write(pupil.getSecondName() + " "+mark + " " + s);
             bufferedWriter.newLine();
-            bufferedWriter.write(pupil.getMarkAt(1)+ " ");
+            for(int i=0; i< pupil.getSubjectsCount(); i++) {
+                bufferedWriter.write(pupil.getSubjectAt(i)+ " ");
+                bufferedWriter.write(pupil.getMarkAt(i) + " ");
+                bufferedWriter.newLine();
+            }
             bufferedWriter.newLine();
-            bufferedWriter.write(pupil.getSubjectAt(1));
+//            for(int i=0; i<pupil.getSubjectsCount();i++){
+//            bufferedWriter.write(pupil.getSubjectAt(i));
+//                bufferedWriter.newLine();
+         //   }
             bufferedWriter.newLine();
             bufferedWriter.write("___________");
             bufferedWriter.close();

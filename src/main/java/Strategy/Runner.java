@@ -29,7 +29,7 @@ public class Runner {
         });
         System.out.println("Sorted asc:");
         printPupilsAvgMarks(pupils);
-
+///сортировка по убываю
         SortUtils.sort(pupils, list -> {
             for (int i = 0; i < list.size(); i++) {
                 for (int j = 0; j < list.size() - 1; j++) {
@@ -54,7 +54,7 @@ public class Runner {
         }
         return pupils;
     }
-
+//среднее арифмети
     private static void printPupilsAvgMarks(List<Pupil> pupils) {
         double[] avg = new double[pupils.size()];
         for (int i = 0; i < pupils.size(); i++) {
@@ -62,7 +62,7 @@ public class Runner {
         }
         System.out.println(Arrays.toString(avg));
     }
-
+//меняет местами эл.массива
     private static <T> void swap(List<T> list, int i, int j) {
         T swap = list.get(i);
         list.set(i, list.get(j));
