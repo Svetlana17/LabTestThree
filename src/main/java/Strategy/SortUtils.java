@@ -7,7 +7,7 @@ public class SortUtils {
     }
 
     public static <T> void sort(List<T> list, SortStrategy<T> sortStrategy) {
-        sortStrategy.sort(list);
+        sortStrategy.sort(list);//происходит сортировка
     }
 
     public interface SortStrategy<T> {

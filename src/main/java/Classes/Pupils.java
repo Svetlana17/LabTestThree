@@ -1,7 +1,5 @@
-package Iterator;
+package Classes;
 
-import Classes.Pupil;
-import Classes.StudentFactory;
 
 import factory_method.PupilFactory;
 
@@ -12,7 +10,7 @@ public class Pupils {
     private Pupils() {
     }
 
-    private static PupilFactory pupilFactory = new StudentFactory();
+    private static PupilFactory pupilFactory = (PupilFactory) new StudentFactory();
     private static String[] studentNames = {"Ivanov", "Petrov", "Sidorov", "Vasechkin", "Sokolova", "Savelyeva", "Kraynova", "Fedorova"};
     private static String[] subjectNames = {"Physics", "Algebra", "Geometry", "Philosophy", "Chemistry", "Biology", "Literature"};
     private static Random random = new Random();
@@ -38,18 +36,18 @@ public class Pupils {
         }
         return 1.0 * sum / pupil.getSubjectsCount();
     }
-
-  //  public static void setPupilFactory(PupilFactory pupilFactory) {
-      //  Pupils.pupilFactory = pupilFactory;
-   // }
-
+///Ссылка на текущую фабрику
+    public static void setPupilFactory(PupilFactory pupilFactory) {
+        Pupils.pupilFactory = pupilFactory;
+    }
+/// Описать метод createInstance  создает экзмепляр ученика
     public static Pupil createInstance(String secondName, int subjectsCount) {
         return pupilFactory.createInstance(secondName, subjectsCount);
     }
 
    // public static Pupil createSynchronizedInstance(Pupil pupil) {
-     //   return new PupilSynchronized(pupil);
-  //  }
+       // return new PupilSynchronized(pupil);
+   // }
 
     public static String randomStudentName() {
         return randomName(studentNames);

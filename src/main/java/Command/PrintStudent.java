@@ -12,13 +12,12 @@ public class PrintStudent {
         student.setSubjectAt(0,"Geo");
         student.setSubjectAt(1, "English");
         student.setSubjectAt(2, "Biology");
-      // student.setSubjectAt(3, "Biology");
+        student.setSubjectAt(3, "Biology");
 
         student.setMarkAt(0,5);
         student.setMarkAt(1,5);
         student.setMarkAt(2,5);
-
-       // student.setMarkAt(3,5);
+        student.setMarkAt(3,5);
 
         student.setPrintCommand(printCol);
         student.setPrintCommand(printRow);

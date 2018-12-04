@@ -1,4 +1,4 @@
-package FactoryMethod;
+package factory_method;
 
 import Classes.Pupil;
 

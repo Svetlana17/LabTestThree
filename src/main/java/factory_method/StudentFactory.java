@@ -1,8 +1,7 @@
-package Classes;
+package factory_method;
 
-import Command.Student;
-
-import factory_method.PupilFactory;
+import Classes.Pupil;
+import Classes.Student;
 
 public class StudentFactory implements PupilFactory {
     @Override

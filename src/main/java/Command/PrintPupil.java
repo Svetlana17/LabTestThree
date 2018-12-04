@@ -106,18 +106,18 @@ public  void  printCol(Student student) throws IOException {
 //            if(file.createNewFile()){
             String s="";
             for(int i=0; i<student.getSubjectsCount(); i++){
-                s=s+ " "+ student.getSubjectAt(i);
+                s=s+ " "+ student.getSubjectAt(i)+ " "+ student.getMarkAt(i);
             }
-            String mark = "";
-            for(int i=0; i<student.getSubjectsCount(); i++){
-                mark=mark+ " "+ student.getMarkAt(i);
-            }
+//            String mark = "";
+//            for(int i=0; i<student.getSubjectsCount(); i++){
+//                mark=mark+ " "+ student.getMarkAt(i);
+//            }
             FileWriter fileWriter = new FileWriter(file, true);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.newLine();
             bufferedWriter.write("___________");
             bufferedWriter.newLine();
-            bufferedWriter.write(student.getSecondName() + " " + mark + " "  + s);
+            bufferedWriter.write(student.getSecondName() + " " +  " "  + s);
             bufferedWriter.newLine();
             ////++++++++++++++++++++++
 //            bufferedWriter.write(student.getMarkAt(1)+ " ");

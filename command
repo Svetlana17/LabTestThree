@@ -4,9 +4,9 @@ Ivanova
 Geo 5
 English 5
 Biology 5
-null 0
+Biology 5
 
 
 ___________
-Ivanova  5 5 5 0  Geo English Biology null
+Ivanova   Geo 5 English 5 Biology 5 Biology 5
 ___________
