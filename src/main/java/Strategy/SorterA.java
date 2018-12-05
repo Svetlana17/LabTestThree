@@ -13,13 +13,6 @@ public class SorterA implements Sorter {
     public void sort(List<Pupil> pupils) {
 
 
-//
-//    @Override
-//    public void sort(List<Pupil> pupils) {
-//        pupils.sort((o1, o2) -> Pupils.calculateAverageMark(o1) > Pupils.calculateAverageMark(o2) ? -1: 1);//вызов метода sort
-//////
-//
-//
 SortUtils.sort(pupils, list -> {
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size() - 1; j++) {
@@ -31,7 +24,5 @@ SortUtils.sort(pupils, list -> {
             }
         }
     });
-      //  System.out.println("Sorted asc:");
-//    Pupils.calculateAverageMark((Pupil) pupils);
 }
 }

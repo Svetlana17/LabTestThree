@@ -39,15 +39,10 @@ public class ChartApplication extends Application {
 
     @Override
     public void start(Stage stage) {
-
-
         table = createTableView();
         table.setItems(Controller.getInstance().getObservableData());
-
         lineChart = createLineChart();
-
         updateSeries();
-
         initStage(stage);
         stage.show();
     }

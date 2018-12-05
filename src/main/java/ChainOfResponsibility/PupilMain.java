@@ -15,7 +15,7 @@ public class PupilMain {
         student.setMarkAt(0,5);
         student.setMarkAt(1,3);
        student.setMarkAt(2,3);
-        student.setMarkAt(3,3);
+     student.setMarkAt(3,3);
         PupilChain col = new PrintPupilCol();
         PupilChain row = new PrintPupilRow();
         col.setNextChain(row);

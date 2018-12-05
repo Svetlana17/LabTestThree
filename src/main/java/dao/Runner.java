@@ -8,14 +8,16 @@ import java.util.List;
 public class Runner {
 
     public static void main(String[] args) {
-//        StudentsDao dao = new SerializableDao("D:\\desktop\\serializable.txt"); // используй это,
-// если нужно записывать сериализовынные обьекты
-        StudentsDao dao = new TextFileDao("C:\\Users\\User\\Desktop\\text.txt");
+ //   StudentsDao dao = new SerializableDao("D:\\desktop\\serializable.txt"); // используй это,
+// есл/и нужно записывать сериализовынные обьекты
+   StudentsDao dao = new TextFileDao("C:\\Users\\User\\Desktop\\text.txt");
         printPupils(dao.getAllStudents());
 
         Student s1 = new Student("Lapchenko", 2);
         s1.setSubjectAt(0, "Mathematics");
         s1.setSubjectAt(1, "Fisic");
+        s1.setMarkAt(0,5);
+        s1.setMarkAt(1,5);
        // Student s2 = new Student("Kukushkin", 3);
 
         dao.addStudent(s1);

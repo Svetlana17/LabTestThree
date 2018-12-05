@@ -14,20 +14,16 @@ public class Runner {
     public static void main(String[] args) {
 
 
-
             System.out.println("SorterA ******************************************");
             List<Pupil> pupils1 = makePupils(10);
             worker = new Worker(new SorterA());
             worker.work(pupils1);
-
             System.out.println();
-
             System.out.println("SorterB ******************************************");
             List<Pupil> pupils2 = makePupils(10);
             worker = new Worker(new SorterB());
             worker.work(pupils2);
         }
-
         private static List<Pupil> makePupils(int count) {
             List<Pupil> pupils = new ArrayList<>();
             for (int i = 0; i < count; i++) {
